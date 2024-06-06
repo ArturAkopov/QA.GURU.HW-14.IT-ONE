@@ -22,3 +22,13 @@
 <img width="6%" title="Jenkins" src="media/logo/Jenkins.svg">
 <img width="6%" title="Telegram" src="media/logo/Telegram.svg">
 </p>
+Тесты в данном проекте написаны на языке <code>Java</code> с использованием фреймворка для тестирования [Selenide](https://selenide.org/), сборщик - <code>Gradle</code>. <code>JUnit 5</code> задействован в качестве фреймворка модульного тестирования.
+При прогоне тестов для запуска браузеров используется [Selenoid](https://aerokube.com/selenoid/).
+Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота. 
+
+Содержание Allure-отчета:
+* Шаги теста;
+* Скриншот страницы на последнем шаге;
+* Page Source;
+* Логи браузерной консоли;
+* Видео выполнения автотеста.
