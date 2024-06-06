@@ -76,6 +76,6 @@ clean test main_page_tests
 ```
 Для запуска сборки необходимо перейти в раздел <code>Собрать с параметрами</code> и нажать кнопку <code>Собрать</code>.
 <p align="center">
-<img title="Jenkins Build" src="media/screens/jenkins.png">
+<img title="Jenkins Build" src="media/screens/jenkins.jpg">
 </p>
 После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
