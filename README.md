@@ -5,8 +5,8 @@
 - [Реализованные проверки](#ballot_box_with_check-реализованные-проверки)
 - [Сборка в Jenkins](#-сборка-в-jenkins)
 - [Пример Allure-отчета](#-пример-allure-отчета)
-- [Уведомления в Telegram](#-уведомления-в-telegram)
-- [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
+- [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
+- [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-тестов-в-selenoid)
   
 ## :computer: Используемый стек
 <p align="center">
@@ -91,4 +91,19 @@ clean test main_page_tests
 
 <p align="center">  
 <img title="Allure Tests" src="media/screens/allure2.jpg" width="850">  
+</p>
+
+### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
+
+После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
+
+<p align="center">
+<img width="70%" title="Telegram Notifications" src="media/screens/telegram.jpg">
+</p>
+
+### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid
+
+В отчетах Allure для каждого теста прикреплен не только скриншот, но и видео прохождения теста
+<p align="center">
+  <img title="Selenoid Video" src="media/screens/selenoid.gif">
 </p>
