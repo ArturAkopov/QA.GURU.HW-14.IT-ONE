@@ -54,7 +54,7 @@
 * <code>SELENOID_URL</code> – Url, адрес удаленного сервера, на котором будут запускаться тесты. По умолчанию - <code>selenoid.autotests.cloud</code>.
 
 <a id="console"></a>
-## Команды для запуска из терминала
+### Команды для запуска из терминала
 ___
 ***Локальный запуск:***
 ```bash
@@ -74,3 +74,8 @@ clean test main_page_tests
 -"Dversion=${BROWSER_VERSION}"
 -"Dselenoid=${SELENOID_URL}"
 ```
+Для запуска сборки необходимо перейти в раздел <code>Собрать с параметрами</code> и нажать кнопку <code>Собрать</code>.
+<p align="center">
+<img title="Jenkins Build" src="media/screens/jenkins.png">
+</p>
+После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
