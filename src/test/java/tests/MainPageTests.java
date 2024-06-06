@@ -37,7 +37,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @Tag("mainPage")
-    @DisplayName("Проверка титульного названия раздела услуг компании.")
+    @DisplayName("Проверка титульного названия раздела услуг компании")
     void titleNameAfterClickToButtonAllProvider() {
         step.openPage()
                 .openAllProvider()
@@ -46,7 +46,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @Tag("mainPage")
-    @DisplayName("Проверка титульного названия раздела вакансий компании.")
+    @DisplayName("Проверка титульного названия раздела вакансий компании")
     void titleNameAfterClickToButtonAllVacancies() {
         step.openPage()
                 .openAllVacancies()
@@ -55,7 +55,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @Tag("mainPage")
-    @DisplayName("Проверка работы кнопки \"Компания\" в разделе навигации в бургер-меню.")
+    @DisplayName("Проверка работы кнопки \"Компания\" в разделе навигации в бургер-меню")
     void titleNameAfterClickToButtonAllNews() {
         step.openPage()
                 .openBurgerMenu()
