@@ -2,8 +2,7 @@
 > IT_ONE — современная гибкая компания, обладающая преимуществом использования новейших технологий и процессов. IT_ONE нацеленa на ускорение темпов роста цифровизации нашей страны с помощью новейших информационных технологий и ведущих мировых практик.
 ## :scroll: Содержание:
 - [Используемый стек](#computer-используемый-стек)
-- [Реализованные проверки](#ballot_box_with_check-Реализованные-проверки)
-- [Запуск тестов из терминала](#arrow_forward-Запуск-автотестов)
+- [Реализованные проверки](#ballot_box_with_check-реализованные-проверки)
 - [Сборка в Jenkins](#-сборка-в-jenkins)
 - [Пример Allure-отчета](#-пример-allure-отчета)
 - [Интеграция с Allure TestOps](#-интеграция-с-allure-testOps)
@@ -46,10 +45,32 @@
 - Проверка титульного названия раздела вакансий компании
 - Проверка работы кнопки "Компания" в разделе навигации в бургер-меню
 
-## :arrow_forward: Запуск автотестов
+  
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/Jenkins.svg"> Сборка в Jenkins
 
-### Запуск тестов из терминала
-```
-gradle clean test -Dselenoid_url="selenoid.autotests.cloud/wd/hub" -Dbrowser_size="1920х1080" -Dbrowser="chrome" -Dbrowser_version="100.0"
+* <code>BROWSER</code> – браузер, в котором будут выполняться тесты. По умолчанию - <code>chrome</code>.
+* <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты. По умолчанию - <code>121.0</code>.
+* <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты. По умолчанию - <code>1920x1080</code>.
+* <code>SELENOID_URL</code> – Url, адрес удаленного сервера, на котором будут запускаться тесты. По умолчанию - <code>selenoid.autotests.cloud</code>.
+
+<a id="console"></a>
+## Команды для запуска из терминала
+___
+***Локальный запуск:***
+```bash
+gradle clean test main_page_tests
+-"Dbrowser=${BROWSER}"
+-"Dsize=${BROWSER_SIZE}"
+-"Dversion=${BROWSER_VERSION}"
+-"Dselenoid=${SELENOID_URL}"
 ```
 При выполнении данной команды в терминале IDE тесты запустятся удаленно в <code>Selenoid</code>.
+
+***Удалённый запуск через Jenkins:***
+```bash  
+clean test main_page_tests
+-"Dbrowser=${BROWSER}"
+-"Dsize=${BROWSER_SIZE}"
+-"Dversion=${BROWSER_VERSION}"
+-"Dselenoid=${SELENOID_URL}"
+```
