@@ -5,8 +5,6 @@
 - [Реализованные проверки](#ballot_box_with_check-реализованные-проверки)
 - [Сборка в Jenkins](#-сборка-в-jenkins)
 - [Пример Allure-отчета](#-пример-allure-отчета)
-- [Интеграция с Allure TestOps](#-интеграция-с-allure-testOps)
-- [Интеграция с Jira](#-интеграция-с-jira)
 - [Уведомления в Telegram](#-уведомления-в-telegram)
 - [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
   
@@ -79,3 +77,18 @@ clean test main_page_tests
 <img title="Jenkins Build" src="media/screens/jenkins.jpg">
 </p>
 После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
+
+## <img width="4%" style="vertical-align:middle" title="Allure_Report" src="media/logo/Allure_Report.svg"> Пример Allure-отчета
+
+
+## Основная страница отчёта
+
+<p align="center">  
+<img title="Allure Overview Dashboard" src="media/screens/allure1.jpg" width="850">  
+</p>  
+
+## Тест-кейсы
+
+<p align="center">  
+<img title="Allure Tests" src="media/screens/allure2.jpg" width="850">  
+</p>
