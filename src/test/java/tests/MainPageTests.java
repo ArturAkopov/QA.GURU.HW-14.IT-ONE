@@ -5,14 +5,14 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.MainPage;
 
-
+@Owner("Акопов Артур")
+@Tag("mainPage")
 @DisplayName("Тесты для главной страницы \"https://www.it-one.ru/\"")
 public class MainPageTests extends TestBase {
 
     MainPage step = new MainPage();
 
     @Test
-    @Tag("mainPage")
     @DisplayName("Проверка содержания ссылки \"https://www.it-one.ru/\" в логотипе")
     void logoContainsLink() {
         step.openPage()
@@ -20,7 +20,6 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
-    @Tag("mainPage")
     @DisplayName("Проверка наименований разделов навигации в бургер-меню")
     void nameElementOfMenuNavigation() {
         step.openPage()
@@ -36,7 +35,6 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
-    @Tag("mainPage")
     @DisplayName("Проверка титульного названия раздела услуг компании")
     void titleNameAfterClickToButtonAllProvider() {
         step.openPage()
@@ -45,7 +43,6 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
-    @Tag("mainPage")
     @DisplayName("Проверка титульного названия раздела вакансий компании")
     void titleNameAfterClickToButtonAllVacancies() {
         step.openPage()
@@ -54,7 +51,6 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
-    @Tag("mainPage")
     @DisplayName("Проверка работы кнопки \"Компания\" в разделе навигации в бургер-меню")
     void titleNameAfterClickToButtonAllNews() {
         step.openPage()
