@@ -24,8 +24,8 @@
 
 - В данном проекте автотесты написаны на языке <code>Java</code> с использованием фреймворка для тестирования Selenide. 
 - В качестве сборщика был использован - <code>Gradle</code>.  
-- Использованы фреймворки <code>JUnit 5</code> и [Selenide](https://selenide.org/).
-- При прогоне тестов браузер запускается в [Selenoid](https://aerokube.com/selenoid/).
+- Использованы фреймворки <code>JUnit 5</code> и <code>Selenide</code>.
+- При прогоне тестов браузер запускается в <code>Selenoid</code>.
 - Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота. 
 
 Содержание Allure-отчета:
