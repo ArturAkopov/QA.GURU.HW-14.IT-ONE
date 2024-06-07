@@ -14,14 +14,14 @@ public class MainPageTests extends TestBase {
 
     @Test
     @DisplayName("Проверка содержания ссылки \"https://www.it-one.ru/\" в логотипе")
-    void logoContainsLink() {
+    void logoContainsLinkTest() {
         step.openPage()
                 .checkLinkHeaderLogo("https://www.it-one.ru/");
     }
 
     @Test
     @DisplayName("Проверка наименований разделов навигации в бургер-меню")
-    void nameElementOfMenuNavigation() {
+    void nameElementOfMenuNavigationTest() {
         step.openPage()
                 .openBurgerMenu()
                 .checkNameElement("""
@@ -36,7 +36,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @DisplayName("Проверка титульного названия раздела услуг компании")
-    void titleNameAfterClickToButtonAllProvider() {
+    void titleNameAfterClickToButtonAllProviderTest() {
         step.openPage()
                 .openAllProvider()
                 .checkHeaderOpenPage("Услуги IT_ONE");
@@ -44,7 +44,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @DisplayName("Проверка титульного названия раздела вакансий компании")
-    void titleNameAfterClickToButtonAllVacancies() {
+    void titleNameAfterClickToButtonAllVacanciesTest() {
         step.openPage()
                 .openAllVacancies()
                 .checkHeaderOpenPage("Вакансии");
@@ -52,7 +52,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @DisplayName("Проверка работы кнопки \"Компания\" в разделе навигации в бургер-меню")
-    void titleNameAfterClickToButtonAllNews() {
+    void titleNameAfterClickToButtonAllNewsTest() {
         step.openPage()
                 .openBurgerMenu()
                 .openElementNavigationInBurgerMenu("Компания")
