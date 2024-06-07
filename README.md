@@ -10,7 +10,7 @@
   
 ## :computer: Используемый стек
 <p align="center">
-<img width="6%" title="IntelliJ IDEA" src="media/logo/Intelij_IDEA.svg"><href="https://www.java.com/">
+<a <img width="6%" title="IntelliJ IDEA" src="media/logo/Intelij_IDEA.svg"><href="https://www.java.com/"> </a>
 <img width="6%" title="Java" src="media/logo/Java.svg">
 <img width="6%" title="Selenide" src="media/logo/Selenide.svg">
 <img width="6%" title="Selenoid" src="media/logo/Selenoid.svg">
