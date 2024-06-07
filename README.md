@@ -19,7 +19,7 @@
 <a href="https://junit.org/junit5/"><img width="6%" title="JUnit5" src="media/logo/JUnit5.svg"/></a> 
 <a href="https://github.com/"><img width="6%" title="GitHub" src="media/logo/GitHub.svg"/></a> 
 <a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="media/logo/Jenkins.svg"/></a> 
-<img width="6%" title="Telegram" src="media/logo/Telegram.svg">
+<a href="https://telegram.org/"><img width="6%" title="Telegram" src="media/logo/Telegram.svg"/></a>  
 </p>
 
 - В данном проекте автотесты написаны на языке <code>Java</code> с использованием фреймворка для тестирования Selenide. 
